@@ -2,7 +2,7 @@
 This is a repo dedicated to managing the archival of unlisted YouTube videos uploaded before 01/01/2017. 
 YouTube will be making them all private in approximately a month.
 
-**This repo is only for unlisted videos made before 01/01/2017.**
+**We are currently focusing only on unlisted videos made before 01/01/2017.**
 
 ## How to Help?
 You don't necessarily need to download to help the effort. Submitting lists of IDs of unlisted videos is very helpful.
