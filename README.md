@@ -39,6 +39,7 @@ cat <file> | xargs -I '{}' -P 15 yt-dlp --skip-download --get-id --datebefore 20
 There's a directory for each "flavor" of unlisted videos. For general videos, use the 'general' directory.
 
 Here's an example file structure:
+```
 |-- General
 |   |-- downloaded.txt
 |   |-- urls.txt
@@ -46,7 +47,7 @@ Here's an example file structure:
 |       |-- list_1.txt
 |       |-- list_2.txt
 |       \`-- random_playlist.txt
-
+```
 
 Each directory has 3 items. 
 Here is what they all mean:
