@@ -43,10 +43,10 @@ Here's an example file structure:
 |-- General
 |   |-- downloaded.txt
 |   |-- urls.txt
-|   \`-- todo
+|   `-- todo
 |       |-- list_1.txt
 |       |-- list_2.txt
-|       \`-- random_playlist.txt
+|       `-- random_playlist.txt
 ```
 
 Each directory has 3 items. 
