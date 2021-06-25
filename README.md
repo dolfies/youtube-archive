@@ -12,9 +12,12 @@ Read [this](#structure-explanation) to get familiar with the repository, and cre
 Want to download? Here's how you can do it.
 1. `git clone` this repo (or `git pull` to update if you've already cloned it.)
 2. Choose what to download (you can find things in the 'todo' directory in every category)
-3. Download it (here's an example command: `cat ~/Temp/undownloaded.txt | xargs -I '{}' -P 25 yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 --add-metadata --embed-thumbnail --write-thumbnail -i --download-archive ~/youtube-archive/CYOA/downloaded.txt --external-downloader aria2c --external-downloader-args "-j 16 -x 16 -s 16 -k 5M" -o "~/Youtuve/%(channel)s/%(id)s.%(ext)s" --datebefore 20170101 'https://youtube.com/watch?v={}'`)
-4. Put the download link in the 'urls.txt' file of your applicable directory
-5. `git add .`, `git commit -m "Message"`, `git push` (or create a pull request)
+3. Download it (here's an example command): 
+```bash
+cat ~/Temp/undownloaded.txt | xargs -I '{}' -P 25 yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 --add-metadata --embed-thumbnail --write-thumbnail -i --download-archive ~/youtube-archive/CYOA/downloaded.txt --external-downloader aria2c --external-downloader-args "-j 16 -x 16 -s 16 -k 5M" -o "~/Youtuve/%(channel)s/%(id)s.%(ext)s" --datebefore 20170101 'https://youtube.com/watch?v={}'
+```
+6. Put the download link in the 'urls.txt' file of your applicable directory
+7. `git add .`, `git commit -m "Message"`, `git push` (or create a pull request)
 
 ### Useful Commands
 Here are some useful [`yt-dlp`](https://github.com/yt-dlp/yt-dlp) commands.
