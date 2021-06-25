@@ -36,7 +36,7 @@ cat <file> | xargs -I '{}' -P 15 yt-dlp --skip-download --get-id --datebefore 20
 (you can replace `-P 15` with the number of concurrent instances you want running)
 
 ## Structure Explanation
-There's a directory for each "flavor" of unlisted videos. For general videos, use the `general` directory.
+There's a directory for each "flavor" of unlisted videos. For general videos, use the 'general' directory.
 
 Here's an example file structure:
 |-- General
