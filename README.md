@@ -17,7 +17,7 @@ Want to download? Here's how you can do it.
 5. `git add .`, `git commit -m "Message"`, `git push` (or create a pull request)
 
 ### Useful Commands
-Here are some useful [`yt-dlp`](/yt-dlp/yt-dlp) commands.
+Here are some useful [`yt-dlp`](https://github.com/yt-dlp/yt-dlp) commands.
 
 **Filter a video/playlist/ID list for at-risk videos:**
 Video/playlist:
