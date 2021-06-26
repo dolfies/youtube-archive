@@ -20,7 +20,7 @@ cat ~/Temp/undownloaded.txt | xargs -I '{}' -P 25 yt-dlp -f 'bestvideo[ext=mp4]+
 7. `git add .`, `git commit -m "Message"`, `git push` (or create a pull request)
 
 ### Useful Commands
-Here are some useful [`yt-dlp`](https://github.com/yt-dlp/yt-dlp) commands.
+Here are some useful commands.
 
 **Filter a video/playlist/ID list for at-risk videos:**
 
@@ -56,8 +56,8 @@ Each directory has 3 items.
 Here is what they all mean:
 
 #### downloaded.txt
-This is a file meant to be used with `youtube-dl`'s `--download-archive` flag (that's why it has different format than the other files).
-`youtube-dl` uses this file to keep track of already downloaded videos. If it finds a video ID in this file, it doesn't download it.
+This is a file meant to be used with [`yt-dlp`](https://github.com/yt-dlp/yt-dlp)'s `--download-archive` flag (that's why it has different format than the other files).
+[`yt-dlp`](https://github.com/yt-dlp/yt-dlp) uses this file to keep track of already downloaded videos. If it finds a video ID in this file, it doesn't download it.
 This is the most important file to keep up-to-date so we stay organized and don't download the same video multiple times.
 
 You can use this command to remove the 'youtube' prefix and make it a list of IDs:
