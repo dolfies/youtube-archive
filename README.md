@@ -39,21 +39,15 @@ cat <file> | xargs -I '{}' -P 15 yt-dlp --skip-download --get-id --datebefore 20
 (you can replace `-P 15` with the number of concurrent instances you want running)
 
 ## Structure Explanation
-There's a directory for each "flavor" of unlisted videos. For general videos, use the 'general' directory.
-
-Here's an example file structure:
+This is the file structure:
 ```
-|-- General
-|   |-- downloaded.txt
-|   |-- urls.txt
-|   `-- todo
+|-- downloaded.txt
+|-- urls.txt
+`-- todo
 |       |-- list_1.txt
 |       |-- list_2.txt
 |       `-- random_playlist.txt
 ```
-
-Each directory has 3 items. 
-Here is what they all mean:
 
 #### downloaded.txt
 This is a file meant to be used with [`yt-dlp`](https://github.com/yt-dlp/yt-dlp)'s `--download-archive` flag (that's why it has different format than the other files).
