@@ -36,7 +36,7 @@ cat <file> | xargs -I '{}' -P 15 yt-dlp --skip-download --get-id --datebefore 20
 ```
 (you can replace `-P 15` with the number of concurrent instances you want running)
 
-#### Compare two lists of videos:
+#### Compare two lists of videos
 ```bash
 grep -Fvxf small_playlist.txt very_big_list.txt >> slightly_smaller_list.txt
 ```
