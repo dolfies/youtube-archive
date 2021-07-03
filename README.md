@@ -20,9 +20,7 @@ cat ~/Temp/undownloaded.txt | xargs -I '{}' -P 25 yt-dlp -f 'bestvideo[ext=mp4]+
 7. `git add .`, `git commit -m "Message"`, `git push` (or create a pull request)
 
 ### Useful Commands
-Here are some useful commands.
-
-**Filter a video/playlist/ID list for at-risk videos:**
+#### Filter a video/playlist/ID list for at-risk videos
 
 Video/playlist:
 ```bash
@@ -37,6 +35,11 @@ or if you want to do multiple at once:
 cat <file> | xargs -I '{}' -P 15 yt-dlp --skip-download --get-id --datebefore 20170101 --match-filter "availability = 'unlisted'" 'https://youtube.com/watch?v={}'
 ```
 (you can replace `-P 15` with the number of concurrent instances you want running)
+
+#### Compare two lists of videos:
+```bash
+grep -Fvxf small_playlist.txt very_big_list.txt >> slightly_smaller_list.txt
+```
 
 ## Structure Explanation
 This is the file structure:
